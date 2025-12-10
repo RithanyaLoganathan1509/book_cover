@@ -1,4 +1,4 @@
-# Ex.06 Book Front Cover Page Design
+# Ex.05 Book Front Cover Page Design
 # Date:05.12.2025
 # AIM:
 To design a book front cover page using HTML and CSS.
@@ -60,10 +60,17 @@ cover.html:
 <head>
     <title>Book Cover</title>
     <style>
+        .border{
+            position: absolute;
+            border:2px solid black;
+            height:95%;
+            width:95%;
+            left: 2.1%;
+            bottom: 2.5%;
+        }
         .bg {
             position: relative;
             background-image: url("{% static 'green.jpeg' %}");
-            border: 2px solid black;
             height: 100%;
             width: 35%;
             margin-left: 33%;
@@ -72,7 +79,7 @@ cover.html:
         .sticker {
             position: absolute;
             left: 5%;
-            top: 3%;
+            top: 4%;
             border-radius: 100%;
             background-color: #6b9071;
             border: 3px solid #6b9071;
@@ -113,7 +120,7 @@ cover.html:
 
         .bg h5 {
             position: absolute;
-            bottom: 0%;
+            bottom: 3%;
             left: 30%;
             font-size: 20px;
             letter-spacing: 5px;
@@ -133,11 +140,26 @@ cover.html:
             font-family: 'Times New Roman', Times, serif;
             font-weight: lighter;
         }
+        .one{
+            position: absolute;
+            bottom:11%;
+            border:1px solid black;
+            width:50%;
+            left:25.8%;
+        }
+        .two{
+            position: absolute;
+            bottom:5%;
+            border:1px solid black;
+            width:50%;
+            left:25.8%;
+        }
     </style>
 </head>
 
 <body>
     <div class="bg">
+        <div class="border"></div>
         <PRE>
         THE 
         COURAGE 
@@ -159,14 +181,16 @@ cover.html:
         <h4>"The Japanese Phenomenon That<br>
             Shows You How to Change Your Life <br>
             and Achieve Real Happiness"</h4>
-        <h5>ICHIRO KISHIMI</h5>
+            <hr class="one">
+            <h5>ICHIRO KISHIMI</h5>
+            <hr class="two">
     </div>
 </body>
 
 </html>
 ```
 # OUTPUT:
-![alt text](book/bookapp/static/image.png)
+![alt text](Screenshot 2025-12-10 125104.png)
 # RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
 
